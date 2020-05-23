@@ -17,9 +17,9 @@
             <td>Tokens</td>
         </tr>
         <tr>
-            <td><textarea name="" id=""></textarea></td>
-            <td><textarea name="" id=""></textarea></td>
-            <td><textarea name="" id=""></textarea></td>
+            <td><textarea name="" style="resize:none" id=""></textarea></td>
+            <td><textarea name="" style="resize:none" id=""></textarea></td>
+            <td><textarea name="" style="resize:none" id=""></textarea></td>
         </tr>
     </table>
 </body>
