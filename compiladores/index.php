@@ -11,15 +11,15 @@
     <h1>Moisés Rentería</h1>
     <h2>Compiladores</h2>
     <table>
-       <tr>
-           <td>Archivo Fuente</td>
-           <td>Análisis Léxico</td>
-           <td>Tokens</td>
-       </tr>
-       <tr>
-           <td></td>
-           <td></td>
-       </tr>
+        <tr>
+            <td>Archivo Fuente</td>
+            <td>Análisis Léxico</td>
+            <td>Tokens</td>
+        </tr>
+        <tr>
+            <td><textarea name="" id=""></textarea></td>
+            <td><textarea name="" id=""></textarea></td>
+        </tr>
     </table>
 </body>
 
