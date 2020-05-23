@@ -9,19 +9,18 @@
 
 <body>
     <h1>Moisés Rentería</h1>
-    <h3>Código Fuente</h3>
-    <textarea name="" id="">
-    </textarea>
-    <hr>
-    <h3>Análizsis Léxico</h3>
-    <textarea name="" id="">
-
-    </textarea>
-    <hr>
-    <h3>Tokens</h3>
-    <textarea name="" id="">
-
-    </textarea>
+    <h2>Compiladores</h2>
+    <table>
+       <tr>
+           <td>Archivo Fuente</td>
+           <td>Análisis Léxico</td>
+           <td>Tokens</td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+       </tr>
+    </table>
 </body>
 
 </html>
