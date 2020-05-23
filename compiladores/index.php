@@ -17,11 +17,14 @@
             <td>Tokens</td>
         </tr>
         <tr>
-            <td><textarea name="" style="resize:none" id=""></textarea></td>
-            <td><textarea name="" style="resize:none" id=""></textarea></td>
-            <td><textarea name="" style="resize:none" id=""></textarea></td>
+            <td><textarea name="" style="resize:none" id="" cols="50" rows="20"></textarea></td>
+            <td><textarea name="" style="resize:none" id="" cols="50" rows="20"></textarea></td>
+            <td><textarea name="" style="resize:none" id="" cols="50" rows="20"></textarea></td>
         </tr>
     </table>
+    <button>Cargar Archivo</button>
+    <br>
+    <button>Descarga</button>
 </body>
 
 </html>
