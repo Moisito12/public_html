@@ -10,6 +10,8 @@
 <body>
     <h1>Moisés Rentería</h1>
     <p>Materia Compilaodres</p>
+    <textarea name="" id="">
+    </textarea>
 </body>
 
 </html>
