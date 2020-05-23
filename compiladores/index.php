@@ -26,6 +26,11 @@
     <button class="btn btn-sm btn-success">Cargar Archivo</button>
     <br><br>
     <button class="btn btn-sm btn-primary">Descarga</button>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        Select image to upload:
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <input type="submit" value="Subir Archivo" name="submit">
+    </form>
 </body>
 
 </html>
