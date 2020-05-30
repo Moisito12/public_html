@@ -76,13 +76,12 @@
             <td><textarea name="" style="resize:none" id="" cols="40" rows="15"></textarea></td>
         </tr>
     </table>
-    <button class="btn btn-sm btn-success">Cargar Archivo</button>
-    <br><br>
-    <button class="btn btn-sm btn-primary">Descarga</button>
+    <a href="https://warm-mesa-59344.herokuapp.com/compiladores/index.php" class="btn btn-primary btn-sm">Ver en Heroku</a>
+    <a href="https://moisesrenteriacompilador.000webhostapp.com/compiladores/index.php" class="btn btn-danger btn-sm">Ver en 000Webhost</a>
     <form action="index.php" method="post" enctype="multipart/form-data">
         Select image to upload:
         <input type="file" name="fileToUpload" id="fileToUpload">
-        <input type="submit" value="Subir Archivo" name="submit">
+        <input type="submit" value="Subir Archivo" name="submit" class="btn btn-sm btn-success">
     </form>
 </body>
 
