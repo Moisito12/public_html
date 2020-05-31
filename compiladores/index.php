@@ -9,6 +9,14 @@
 </head>
 
 <body>
+    <script>
+        function ejemplo1() {
+            document.getElementById("text_root").innerText = "Mensaje HTML X3";
+        }
+        function ejemplo2() {
+            document.getElementById("text_root").innerText = "public class java { public status void main(String[] args){System.out.println('Hello World');}}";
+        }
+    </script>
     <?php
 
     if (!empty($_POST)) {
@@ -48,7 +56,7 @@
             // if everything is ok, try to upload file
         } else {
             if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-                echo "The file " . basename($_FILES["fileToUpload"]["name"]) . " has been uploaded.";
+                echo  "<div class='alert alert-success col-md-5 pl-0'  >" . "The file " . basename($_FILES["fileToUpload"]["name"]) . " has been uploaded." . "</div>";
             } else {
                 echo "Lo siento,hubo un error al cargar el archivo.";
             }
@@ -64,7 +72,7 @@
             <td>Tokens</td>
         </tr>
         <tr>
-            <td><textarea name="" style="resize:none" id="" cols="40" rows="15">
+            <td><textarea name="text_doc" id="text_root" style="resize:none" id="" cols="40" rows="15">
             <?php
             if (!empty($target_file) && file_exists($target_file)) {
                 $fileContent = file_get_contents($target_file);
@@ -76,13 +84,24 @@
             <td><textarea name="" style="resize:none" id="" cols="40" rows="15"></textarea></td>
         </tr>
     </table>
-    <a href="https://warm-mesa-59344.herokuapp.com/compiladores/index.php" class="btn btn-primary btn-sm">Ver en Heroku</a>
-    <a href="https://moisesrenteriacompilador.000webhostapp.com/compiladores/index.php" class="btn btn-danger btn-sm">Ver en 000Webhost</a>
+    <a href="https://warm-mesa-59344.herokuapp.com/compiladores/index.php" class="btn btn-primary btn-sm" target="_blank">Ver en Heroku</a>
+    <a href="https://moisesrenteriacompilador.000webhostapp.com/compiladores/index.php" class="btn btn-danger btn-sm" target="_blank">Ver en 000Webhost</a>
     <form action="index.php" method="post" enctype="multipart/form-data">
         Select image to upload:
         <input type="file" name="fileToUpload" id="fileToUpload">
         <input type="submit" value="Subir Archivo" name="submit" class="btn btn-sm btn-success">
     </form>
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group mr-2" role="group" aria-label="First group">
+            <input type="button" value="Ejemplo 1" onclick="ejemplo1()" class="btn btn-secondary">
+            <input type="button" value="Ejemplo 2" onclick="ejemplo2()" class="btn btn-secondary">
+        </div>
+        <div class="btn-group mr-2" role="group" aria-label="Second group">
+            <a href="ejemplo1.txt" download="ejemplo1.txt" class="btn btn-secondary">Descarga 1</a>
+            <a href="ejemplo2.txt" download="ejemplo2.txt" class="btn btn-secondary">Descarga 2</a>
+            <a href="ejemplo3.txt" download="ejemplo3.txt" class="btn btn-secondary">Descarga 3</a>
+        </div>
+    </div>
 </body>
 
 </html>
