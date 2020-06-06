@@ -13,8 +13,21 @@
         function ejemplo1() {
             document.getElementById("text_root").innerText = "Mensaje HTML X3";
         }
+
         function ejemplo2() {
-            document.getElementById("text_root").innerText = "public class java { public status void main(String[] args){System.out.println('Hello World');}}";
+            document.getElementById("text_root").innerText = "public class java { public status void main(String[] args) {System.out.println('Hello World'); } }";
+        }
+
+        function tokenizar() {
+            var token = document.getElementById('text_root').value;
+            var expresionRegular =/[{}() ."!]/ig;
+            var res = token.split(expresionRegular);
+            var token_espacio = "";
+            for (let i = 0; i < res.length; i++) {
+                //alert(i + " " + res[i]);
+                token_espacio += res[i] + '\n';
+            }
+            document.getElementById('text_token').innerHTML = token_espacio;
         }
     </script>
     <?php
@@ -68,7 +81,7 @@
     <table>
         <tr>
             <td>Archivo Fuente</td>
-            <td>Análisis Léxico</td>
+            <td>Análisis Léxico <button class="btn btn-sm btn-warning">Descarga</button> </td>
             <td>Tokens</td>
         </tr>
         <tr>
@@ -80,7 +93,8 @@
                 unlink($target_file);
             }
             ?></textarea></td>
-            <td><textarea name="" style="resize:none" id="" cols="40" rows="15"></textarea></td>
+            <td><textarea name="text_token" style="resize:none" id="text_token" cols="40" rows="15">
+            </textarea></td>
             <td><textarea name="" style="resize:none" id="" cols="40" rows="15"></textarea></td>
         </tr>
     </table>
@@ -101,6 +115,7 @@
             <a href="ejemplo2.txt" download="ejemplo2.txt" class="btn btn-secondary">Descarga 2</a>
             <a href="ejemplo3.txt" download="ejemplo3.txt" class="btn btn-secondary">Descarga 3</a>
         </div>
+        <button type="button" class="btn btn-success" onclick="tokenizar()">Tokenizar</button>
     </div>
 </body>
 
