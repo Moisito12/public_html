@@ -20,12 +20,17 @@
 
         function tokenizar() {
             var token = document.getElementById('text_root').value;
-            var expresionRegular =/[{}() ."!]/ig;
-            var res = token.split(expresionRegular);
+            // var expresionRegular =/[{}() ."!]/ig;
+            var expresionRegular = /\[|\]|\{|\}|\(|\)|\,|\"|\;|\w+|\s|\=/ig;
+            var res = token.match(expresionRegular);
             var token_espacio = "";
             for (let i = 0; i < res.length; i++) {
                 //alert(i + " " + res[i]);
-                token_espacio += res[i] + '\n';
+                // token_espacio += res[i] + '\n';
+                var sin_espacio = res[i].trim();
+                if (sin_espacio != "") {
+                    token_espacio += res[i] + '\n';
+                }
             }
             document.getElementById('text_token').innerHTML = token_espacio;
         }
