@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -80,20 +79,20 @@
 
   <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
     <div class="btn-group mr-2" role="group" aria-label="First group">
-      <input type="button" value="Ejemplo 1" onclick="ejemplo1()" class="btn btn-secondary">
-      <input type="button" value="Ejemplo 2" onclick="ejemplo2()" class="btn btn-secondary">
+      <input type="button" value="Ejemplo 1" onclick="ejemplo1()" class="btn btn-outline-primary">
+      <input type="button" value="Ejemplo 2" onclick="ejemplo2()" class="btn btn-outline-primary">
     </div>
 
     <div class="btn-group mr-2" role="group" aria-label="Second group">
-      <a href="ejemplo1.txt" download="ejemplo1.txt" class="btn btn-secondary">Descarga 1</a>
-      <a href="ejemplo2.txt" download="ejemplo2.txt" class="btn btn-secondary">Descarga 2</a>
-      <a href="ejemplo3.txt" download="ejemplo3.txt" class="btn btn-secondary">Descarga 3</a>
+      <a href="ejemplo1.txt" download="ejemplo1.txt" class="btn btn-outline-success">Descarga 1</a>
+      <a href="ejemplo2.txt" download="ejemplo2.txt" class="btn btn-outline-success">Descarga 2</a>
+      <a href="ejemplo3.txt" download="ejemplo3.txt" class="btn btn-outline-success">Descarga 3</a>
     </div>
 
     <div class="btn-group mr-2" role="group" aria-label="Second group">
-    <button type="button" class="btn btn-primary btn-sm"  onclick="tokenizar();acomodar()">| Tokenizar |</button>
-    <button type="button" class="btn btn-primary btn-sm" onclick="alerta_tokens()">| Tokens |</button>
-    <button type="button" class="btn btn-primary btn-sm" onclick="alerta()">| Palabras Reservadas |</button>
+    <button type="button" class="btn btn-secondary btn-sm"  onclick="tokenizar();acomodar()">| Tokenizar |</button>
+    <button type="button" class="btn btn-secondary btn-sm" onclick="alerta_tokens()">| Tokens |</button>
+    <button type="button" class="btn btn-secondary btn-sm" onclick="alerta()">| Palabras Reservadas |</button>
     </div>
 
 
