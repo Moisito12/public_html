@@ -20,7 +20,7 @@ var reservadas = ["abstract", "assert", "boolean", "break", "byte", "case", "cat
     }
 
     function ejemplo1() {
-      document.getElementById("text_root").innerText = "Mensaje HTML X3";
+      document.getElementById("text_root").innerText = " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae tincidunt sapien. Sed placerat ac quam vitae faucibus. Morbi non scelerisque nisi. Proin id eleifend mauris. Vestibulum nec dignissim purus. Nullam eget nibh sit amet mi efficitur egestas in a est. Phasellus neque dui, tristique vel lacus nec, tincidunt rutrum libero. Nam nec tortor tellus. Nulla ante risus, sollicitudin non nisi vitae, gravida varius dolor. "
     }
 
     function ejemplo2() {

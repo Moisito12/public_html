@@ -49,11 +49,11 @@
   <h2>Compiladores</h2>
   <table>
     <tr>
-      <td>Archivo Fuente <button onclick="downFuente()" class="btn btn-danger btn-sm">Descarga</button> </td>
-      <td>Análisis Léxico <button onclick="downAnalisis()" class="btn btn-danger btn-sm">Descarga</button> </td>
+      <td>Archivo Fuente <button onclick="downFuente()" class="btn btn-outline-danger btn-sm">Descarga</button> </td>
+      <td>Análisis Léxico <button onclick="downAnalisis()" class="btn btn-outline-danger btn-sm">Descarga</button> </td>
 
 
-      <td>Tokens <button onclick="downTokens()" class="btn btn-danger btn-sm">Descarga</button> </td>
+      <td>Tokens <button onclick="downTokens()" class="btn btn-outline-danger btn-sm">Descarga</button> </td>
     </tr>
     <tr>
       <td><textarea name="text_doc" id="text_root" style="resize:none" id="textOne" cols="40" rows="15">
@@ -69,8 +69,8 @@
       <td><textarea name="acomodado" style="resize:none" id="text3" cols="40" rows="15"></textarea></td>
     </tr>
   </table>
-  <a href="http://herokuhernandez.herokuapp.com/compiladores/" class="btn btn-primary btn-sm" target="_blank">Ver en Heroku</a>
-  <a href="https://compiladoreshernandez.000webhostapp.com/compiladores/" class="btn btn-danger btn-sm" target="_blank">Ver en 000Webhost</a>
+  <a href="http://moises-compilador.herokuapp.com/compiladores/" class="btn btn-primary btn-sm" target="_blank">Ver en Heroku</a>
+  <a href="https://moisesrenteriacompilador.000webhostapp.com/compiladores/" class="btn btn-danger btn-sm" target="_blank">Ver en 000Webhost</a>
   <form action="index.php" method="post" enctype="multipart/form-data">
     Select image to upload:
     <input type="file" name="fileToUpload" id="fileToUpload">
